@@ -49,7 +49,7 @@ header .navbar {
 }
 
 .hero-content {
-    max-width: 620px;
+    max-width: 750px;
 }
 
 .hero-label {
@@ -65,7 +65,7 @@ header .navbar {
 
 .hero h1 {
     margin-bottom: 22px;
-    font-size: 58px;
+    font-size: 72px;
     line-height: 1.1;
     color: #0f172a;
 }
@@ -92,7 +92,7 @@ header .navbar {
 .primary-button,
 .secondary-button {
     display: inline-block;
-    padding: 14px 22px;
+    padding: 18px 36px;
     border-radius: 9px;
     text-decoration: none;
     font-weight: 700;
@@ -168,22 +168,17 @@ header .navbar {
     color: #475569;
     font-size: 14px;
 }
-.logo img{
-    width:190px;
-    height:auto;
-    display:block;
-}
+
 .logo {
     display: flex;
     align-items: center;
     text-decoration: none;
 }
-
-.logo img {
-    width: 180px;
-    height: 70px;
-    object-fit: contain;
-    display: block;
+.logo img{
+    width:340px;
+    height:auto;
+    object-fit:contain;
+    display:block;
 }
 .services{
     padding:90px 8%;
@@ -377,12 +372,6 @@ footer {
 .navbar-brand {
     margin-right: 30px;
     flex-shrink: 0;
-}
-
-.navbar-brand img {
-    display: block;
-    width: 130px;
-    height: auto;
 }
 
 .navbar-collapse {
@@ -611,4 +600,24 @@ transform:translateY(0);
 
 }
 
+}
+/* Navbar logosu */
+.navbar-brand img {
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Navbar yüksekliği */
+header .navbar {
+    width: 100%;
+    padding: 12px 0;
+}
+
+/* Mobil görünüm */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 150px;
+    }
 }
