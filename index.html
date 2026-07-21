@@ -318,46 +318,113 @@ Blog
 
     </div>
 
-    <form class="contact-form">
+   <form
+    class="contact-form"
+    action="https://formsubmit.co/lumexa.digitals@gmail.com"
+    method="POST">
 
-        <label>
-            Ad Soyad
-            <input type="text" required>
-        </label>
+    <input
+        type="hidden"
+        name="_subject"
+        value="Anasayfadan Yeni Lumexa Ön Görüşme Talebi">
 
-        <label>
-            İşletme Adı
-            <input type="text" required>
-        </label>
+    <input
+        type="hidden"
+        name="_captcha"
+        value="false">
 
-        <label>
-            E-posta
-            <input type="email" required>
-        </label>
+    <input
+        type="hidden"
+        name="_template"
+        value="table">
 
-        <label>
-            İlgilendiğiniz Hizmet
+    <input
+        type="hidden"
+        name="_next"
+        value="https://lumexa-digital.github.io/lumexa-website/">
 
-            <select required>
-                <option value="">Hizmet seçiniz</option>
-                <option>Web Sitesi</option>
-                <option>Google İşletme Profili</option>
-                <option>Web Sitesi + Google İşletme Profili</option>
-            </select>
+    <label>
+        Ad Soyad
 
-        </label>
+        <input
+            type="text"
+            name="Ad Soyad"
+            required>
+    </label>
 
-        <label class="full-width">
-            Projenizi Kısaca Anlatın
+    <label>
+        İşletme Adı
 
-            <textarea rows="5" required></textarea>
-        </label>
+        <input
+            type="text"
+            name="İşletme Adı">
+    </label>
 
-        <button type="submit" class="form-button full-width">
-            Ücretsiz Ön Görüşme Talebi Gönder
-        </button>
+    <label>
+        E-posta
 
-    </form>
+        <input
+            type="email"
+            name="email"
+            required>
+    </label>
+
+    <label>
+        İlgilendiğiniz Hizmet
+
+        <select
+            name="Hizmet"
+            required>
+
+            <option value="">
+                Hizmet seçiniz
+            </option>
+
+            <option value="Web Sitesi Tasarımı">
+                Web Sitesi Tasarımı
+            </option>
+
+            <option value="Google İşletme Profili">
+                Google İşletme Profili
+            </option>
+
+            <option value="Yerel SEO">
+                Yerel SEO
+            </option>
+
+            <option value="Web Sitesi + Google İşletme Profili">
+                Web Sitesi + Google İşletme Profili
+            </option>
+
+        </select>
+    </label>
+
+    <label class="full-width">
+        Projenizi Kısaca Anlatın
+
+        <textarea
+            name="message"
+            rows="5"
+            required></textarea>
+    </label>
+
+    <label class="full-width consent-label">
+        <input
+            type="checkbox"
+            required>
+
+        Gizlilik Politikası ve KVKK Aydınlatma Metni kapsamında
+        bilgilendirildim.
+    </label>
+
+    <button
+        type="submit"
+        class="form-button full-width">
+
+        Ücretsiz Ön Görüşme Talebi Gönder
+    </button>
+
+</form>
 
 </section>
 
@@ -371,18 +438,18 @@ Blog
 
     <div class="container">
 
-        <div class="row g-5">
+        <div class="footer-grid">
 
-            <div class="col-lg-5">
+            <div class="footer-brand">
 
                 <img
-                    src="assets/lumexa-logo.png"
-                    alt="Lumexa Digital Logo"
-                    class="footer-logo">
+                src="./assets/lumexa-logo.png"
+                alt="Lumexa Digital Logo"
+                class="footer-logo">
 
                 <p class="footer-description">
                     Küçük ve orta ölçekli işletmeler için profesyonel
-                    web sitesi ve Google İşletme Profili çözümleri sunuyoruz.
+                    web tasarım, Google İşletme Profili ve dijital çözümler sunuyoruz.
                 </p>
 
                 <p class="footer-slogan">
@@ -391,12 +458,11 @@ Blog
 
             </div>
 
+            <div class="footer-column">
 
-            <div class="col-6 col-lg-3">
+                <h3>Hızlı Menü</h3>
 
-                <h3 class="footer-title">Hızlı Menü</h3>
-
-                <ul class="footer-links">
+                <ul>
                     <li><a href="index.html">Anasayfa</a></li>
                     <li><a href="hizmetler.html">Hizmetler</a></li>
                     <li><a href="hakkimizda.html">Hakkımızda</a></li>
@@ -406,17 +472,41 @@ Blog
 
             </div>
 
+            <div class="footer-column">
 
-            <div class="col-6 col-lg-4">
+                <h3>Yasal</h3>
 
-                <h3 class="footer-title">İletişim</h3>
+                <ul>
+                    <li>
+                        <a href="gizlilik-politikasi.html">
+                            Gizlilik Politikası
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="kvkk.html">
+                            KVKK Aydınlatma Metni
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="cerez-politikasi.html">
+                            Çerez Politikası
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="footer-column footer-contact">
+
+                <h3>İletişim</h3>
 
                 <a
                     href="mailto:lumexa.digitals@gmail.com"
                     class="footer-email">
-                    lumexa.digitals@gmail.com
 
-                    
+                   lumexa.digitals@gmail.com
 
                 </a>
 
@@ -432,7 +522,6 @@ Blog
 
         </div>
 
-
         <div class="footer-bottom">
 
             <p>
@@ -440,7 +529,7 @@ Blog
             </p>
 
             <p>
-                Web Sitesi · Google İşletme Profili
+                Web Tasarım · Google İşletme Profili · Yerel SEO
             </p>
 
         </div>
@@ -448,5 +537,6 @@ Blog
     </div>
 
 </footer>
+
 </body>
 </html>
